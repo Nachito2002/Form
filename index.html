@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="control.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-box">
+            <h1 id="title">Videojuego ideal</h1>
+            <p id="description">Elige todas las caracteristicas que debe tener tu videojuego ideal</p>
+        </div>
+    </header>
+    <main id="main">
+        <form action="" method="POST" id="survey-form">
+            <div class="box">
+                <label class="label" id="name-label" for="name">Nombre</label>
+                <input type="text" id="name" class="input" placeholder="Ingrea tu nombre" required>
+            </div>
+
+            <div class="box">
+                <label class="label" id="email-label" for="email">Email</label>
+                <input type="email" id="email" class="input" placeholder="Ingresa tu email" required>
+            </div>
+
+            <div class="box">
+                <label class="label" id="number-label" for="number">Edad <span class="optional">(opcional)</span></label>
+                <input type="number" id="number" class="input" min="10" max="99" placeholder="Ingresa tu edad">
+            </div>
+
+            <div class="box">
+                <p class="label">Sexo</p>
+                <div class="radio">
+                    <input type="radio" name="gender" id="hombre" value="hombre" required>
+                    <label class="label-radio" for="hombre">Hombre</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="gender" id="mujer" value="mujer" required>
+                    <label class="label-radio" for="mujer">Mujer</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="gender" id="otro" value="otro" required>
+                    <label class="label-radio" for="otro">Otro</label>
+                </div>
+            </div>
+
+            <div class="box">
+                <label class="label" for="category">Categoria</label>
+                <select name="category" class="input" id="dropdown" required>
+                    <option class="option" value="accion">Accion</option>
+                    <option class="option" value="arcade">Arcade</option>
+                    <option class="option" value="deportivo">Deportivo</option>
+                    <option class="option" value="estrategia">Estrategia</option>
+                    <option class="option" value="simulation">Simulacion</option>
+                    <option class="option" value="mesa">Juego de mesa</option>
+                    <option class="option" value="musical">Juego musical</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p class="label">Plataformas</p>
+                <div class="check">
+                    <input type="checkbox" class="check" name="plataform" id="playstation-3" value="playstation-3">
+                <label for="playstation-3">PlayStation 3</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="check" name="plataform" id="playstation-4" value="playstation-4">
+                <label for="playstation-4">PlayStation 4</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="check" name="plataform" id="xbox-360" value="xbox-360">
+                <label for="xbox-360">Xbox 360</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="check" name="plataform" id="xbox-one" value="xbox-one">
+                <label for="xbox-one">Xbox One</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="check" name="plataform" id="wii-u" value="wii-u">
+                <label for="wii-u">Wii-U</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="check" name="plataform" id="pc" value="pc" checked>
+                <label for="pc">PC</label>
+                </div>
+            </div>
+
+            <div class="box">
+                <label class="label" for="text">Informacion adicional</label>
+                <textarea name="textarea" class="input" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="box">
+                <button id="submit" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer id="footer">
+        <p id="foot">Espero que te haya gustado</p>
+    </footer>
+</body>
+</html>
